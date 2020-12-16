@@ -45,12 +45,56 @@ section .star {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  -webkit-animation: animate 8s ease-in-out infinite;
-          animation: animate 8s ease-in-out infinite;
+  -webkit-animation: animate 8s ease-in-out infinite, backgroundmove 16s linear infinite;
+          animation: animate 8s ease-in-out infinite, backgroundmove 16s linear infinite;
 }
 
 section .star1 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
   background: url(./stars/star1.png);
+}
+
+section .star2 {
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+  background: url(./stars/star2.png);
+}
+
+section .star3 {
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  background: url(./stars/star3.png);
+}
+
+section .star4 {
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+  background: url(./stars/star4.png);
+}
+
+section .star5 {
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+  background: url(./stars/star5.png);
+}
+
+section .star6 {
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+  background: url(./stars/star6.png);
+}
+
+section .star7 {
+  -webkit-animation-delay: -6s;
+          animation-delay: -6s;
+  background: url(./stars/star7.png);
+}
+
+section .star8 {
+  -webkit-animation-delay: -7s;
+          animation-delay: -7s;
+  background: url(./stars/star8.png);
 }
 
 @-webkit-keyframes animate {
@@ -86,6 +130,28 @@ section .star1 {
   70%,
   90% {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes backgroundmove {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+}
+
+@keyframes backgroundmove {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
   }
 }
 /*# sourceMappingURL=style.css.map */
