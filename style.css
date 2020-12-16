@@ -6,4 +6,48 @@
           box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #000200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section h2 {
+  color: transparent;
+  font-weight: 900;
+  font-size: 14em;
+  -webkit-text-stroke: 2px #fff;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 900px) {
+  section h2 {
+    font-size: 15vw;
+  }
+}
+
+section .star {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+section .star1 {
+  background: url(./stars/star1.png);
+}
 /*# sourceMappingURL=style.css.map */
